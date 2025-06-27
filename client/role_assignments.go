@@ -46,7 +46,7 @@ func (s *azureClient) ListRoleAssignmentsForResource(ctx context.Context, resour
 	var (
 		out    = make(chan AzureResult[azure.RoleAssignment])
 		path   = fmt.Sprintf("%s/providers/Microsoft.Authorization/roleAssignments", resourceId)
-		params = query.RMParams{ApiVersion: "2015-07-01", Filter: filter, TenantId: tenantId}
+		params = query.RMParams{ApiVersion: "2022-04-01", Filter: filter, TenantId: tenantId}
 	)
 
 	go getAzureObjectList[azure.RoleAssignment](s.resourceManager, ctx, path, params, out)
