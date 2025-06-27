@@ -289,9 +289,9 @@ var (
 		Usage:      "The maximum number of connections made during collection.",
 		Persistent: true,
 		Required:   false,
-		Default:    20,
+		Default:    1,
 		MinValue:   1,
-		MaxValue:   200,
+		MaxValue:   1,
 	}
 
 	ColMaxIdleConnsPerHost = Config{
@@ -300,9 +300,9 @@ var (
 		Usage:      "The maximum number of idle connections allowed during collection.",
 		Persistent: true,
 		Required:   false,
-		Default:    20,
+		Default:    1,
 		MinValue:   1,
-		MaxValue:   200,
+		MaxValue:   1,
 	}
 
 	ColStreamCount = Config{
@@ -311,9 +311,9 @@ var (
 		Usage:      "The number of threads to use when collecting various resources.",
 		Persistent: true,
 		Required:   false,
-		Default:    25,
+		Default:    1,
 		MinValue:   1,
-		MaxValue:   50,
+		MaxValue:   1,
 	}
 
 	// Command specific configurations
