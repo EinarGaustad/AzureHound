@@ -20,14 +20,14 @@ package enums
 type KeyVaultAccessType = string
 
 const (
-//	GetCerts   KeyVaultAccessType = "GetCerts"
+	GetCerts   KeyVaultAccessType = "GetCerts"
 	GetKeys    KeyVaultAccessType = "GetKeys"
 	GetSecrets KeyVaultAccessType = "GetSecrets"
 )
 
 func KeyVaultAccessPolicies() []KeyVaultAccessType {
 	return []KeyVaultAccessType{
-//		GetCerts,
+		GetCerts,
 		GetKeys,
 		GetSecrets,
 	}
